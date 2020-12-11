@@ -38,14 +38,14 @@ p {
     padding-bottom: 30px;
 }
 
-#name_chn {
+/* #name_chn {
     position: absolute;
     left:135px;
     top: -5px;
     width: 100px;
     height: 100px;
     background: transparent url(./images/name.png) no-repeat;
-}
+} */
 
 /* #name_chn3 { */
 /*     position: absolute; */
