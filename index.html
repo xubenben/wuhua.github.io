@@ -114,17 +114,30 @@ I joined <a href="https://ir.baidu.com/">Baidu</a> in 2010. Now I am the technic
 <a name="res"></a>
 <div id="Research">
 	<h1>Research</h1>
-	<ul>
-    <li>
-        Talk at 百度大脑NLP语言与知识技术峰会2020, <a href="https://www.bilibili.com/video/BV1jk4y1y7Y6?from=search&seid=17592121354154345012">video</a>
-    </li>
-	</ul>
 
-    <h2>Research2</h2>
+    <h2>Open-Domain Dialogue Systems</h2>
+    The aim of the open domain dialogue system is let the machines capable of chatting, answering question and completing tasks, as well as the ability of rapid learning and continuous evolution. Its core competencies are as follows:
     <ul>
-    <li>
-        Talk at 百度大脑NLP语言与知识技术峰会2020, <a href="https://www.bilibili.com/video/BV1jk4y1y7Y6?from=search&seid=17592121354154345012">video</a>
-    </li>
+        <li>Understanding: understand natural languages</li>
+        <li>Expression: express in fluent natural languages</li>
+        <li>Emotion: understand emotions and respond with appropriate emotions</li>
+        <li>Thinking: Context-based calculation, reasoning and decision making</li>
+        <li>Learning: Capable of learning and evolution</li>
+    </ul>
+    It is not easy to make such a system come true. There are several fundamental problems to be solved: dialogue-oriented knowledge representation, knowledge- grounded policy learning, knowledge-grounded response generation.<br>
+    In order to approach this target, we have conducted some researches:<br>
+    <ul>
+        <li>
+            Large-scale pre-trained response generation model:  Based on the available large-scale open-domain conversation, we pre-trained a response generation model PLATO-2 via curriculum learning. We have released our English models and source codes at GitHub. PLATO-2 was ranked top 1 at DSTC 9 Track 1, Track2, and Track 3 shared tasks.
+        </li>
+        <li>
+            Knowledge-grounded policy learning and response generation: we leverage graphs to guide policy learning. Different kinds of graphs are used including knowledge graphs, conversation graphs constructed from query logs, event graphs constructed from stories. Several papers were published in AAAI 2020, ACL 2020, IJCAI 2020.
+        </li>
+        <li>
+            Datasets for knowledge-grounded dialogue system <br>
+            DuCov: This corpus is designed to facilitate the researches towards building a human-like conversational agent: endowing it with the ability of proactively leading the conversation. In DuConv, one acts as a conversation leader and the other acts as the follower. The leader is provided with a knowledge graph and asked to sequentially change the discussion topics, following the given conversation goal, and meanwhile keep the dialogue as natural and engaging as possible. DuConv enables a very challenging task as the model needs to both understand dialogue and plan over the given knowledge graph. This dataset contains about 270K utterances and 30k dialogues.<br>
+            DuRecDial: This corpus is designed to facilitate conversational recommendation over multi-type dialogs, where the bots can proactively and naturally lead a conversation from a non-recommendation dialog (e.g., QA) to a recommendation dialog, considering user’s interests and feedback. DuRecDial contains about 10k dialogs, 156k utterances. In each dialog, the recommender proactively leads a multi-type dialog to approach recommendation targets and then makes multiple recommendations with rich interaction behavior. This dataset allows us to systematically investigate different parts of the overall problem, e.g., how to naturally lead a dialog, how to interact with users for recommendation. <br>
+        </li>
     </ul>
 
     <h2>Research3</h2>
