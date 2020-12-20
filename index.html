@@ -114,7 +114,7 @@ I joined <a href="https://ir.baidu.com/">Baidu</a> in 2010. Now I am the technic
 <a name="res"></a>
 <div id="Research">
 	<h1>Research</h1>
-
+    <em>Interests</em>: Dialogue Systems, Machine Translation, Natural Language Processing and Knowledge Graph.
     <h2>Open-Domain Dialogue Systems</h2>
     The aim of the open domain dialogue system is let the machines capable of chatting, answering question and completing tasks, as well as the ability of rapid learning and continuous evolution. Its core competencies are as follows:
     <ul>
@@ -124,15 +124,15 @@ I joined <a href="https://ir.baidu.com/">Baidu</a> in 2010. Now I am the technic
         <li>Thinking: Context-based calculation, reasoning and decision making</li>
         <li>Learning: Capable of learning and evolution</li>
     </ul><br>
-    It is not easy to make such a system come true. There are several fundamental problems to be solved: dialogue-oriented knowledge representation, knowledge- grounded policy learning, knowledge-grounded response generation.<br>
+    It is not easy to make such a system come true. There are several fundamental problems to be solved: dialogue-oriented knowledge representation, knowledge-grounded policy learning, knowledge-grounded response generation.<br><br>
     In order to approach this target, we have conducted some researches:<br>
     <ul>
         <li>
-            <em>Large-scale pre-trained response generation model</em>>:  <br>
-            Based on the available large-scale open-domain conversation, we pre-trained a response generation model <a href="https://arxiv.org/pdf/2006.16779.pdf">PLATO-2</a> via curriculum learning. We have released our English models and source codes at <a href="https://github.com/PaddlePaddle/Knover/tree/master/plato-2">Github</a>. PLATO-2 was ranked top 1 at <a href="https://dstc9.dstc.community/tracks">DSTC 9</a>Track 1, Track2, and Track 3 shared tasks.
+            <em>Large-scale pre-trained response generation model</em>:  <br>
+            Based on the available large-scale open-domain conversation, we pre-trained a response generation model <a href="https://arxiv.org/pdf/2006.16779.pdf">PLATO-2</a> via curriculum learning. We have released our English models and source codes at <a href="https://github.com/PaddlePaddle/Knover/tree/master/plato-2">Github</a>. PLATO-2 was ranked top 1 at <a href="https://dstc9.dstc.community/tracks">DSTC 9</a> Track 1, Track2, and Track 3 shared tasks.
         </li>
         <li>
-            <em>Knowledge-grounded policy learning and response generation</em>>: <br>
+            <em>Knowledge-grounded policy learning and response generation</em>: <br>
             we leverage graphs to guide policy learning. Different kinds of graphs are used including knowledge graphs, conversation graphs constructed from query logs, event graphs constructed from stories. Several papers were published in <a href="http://ir.hit.edu.cn/~car/papers/AAAI2020-Xu-kgconv.pdf">AAAI 2020</a>, <a href="https://www.aclweb.org/anthology/2020.acl-main.166.pdf">ACL 2020</a>, <a href="https://www.ijcai.org/Proceedings/2020/0545.pdf">IJCAI 2020</a>.
         </li>
         <li>
@@ -142,12 +142,33 @@ I joined <a href="https://ir.baidu.com/">Baidu</a> in 2010. Now I am the technic
         </li>
     </ul>
 
-    <h2>Research3</h2>
+    <h2>Machine Translation</h2>
+    Since 2010, we have been working on an online machine translation product named <a href="https://fanyi.baidu.com/">Baidu Translate</a>, which translates among 203 languages. In 2011, we launched the statistical machine translation service. In May, 2015, we launched the world’s first neural machine translation service. Besides text translation, Baidu Translate supports speech-to-speech translation, simultaneous translation, and OCR/image translation.
     <ul>
     <li>
-        Talk at 百度大脑NLP语言与知识技术峰会2020, <a href="https://www.bilibili.com/video/BV1jk4y1y7Y6?from=search&seid=17592121354154345012">video</a>
+        Simultaneous Translation<br>
+        We co-organized the first Workshop on <a href="https://autosimtrans.github.io/2020/">Automatic Simultaneous Translation 2020</a>, where we release the first Chinese-English simultaneous translation <a href="https://autosimtrans.github.io/2020/shared.html#dataset">dataset</a>, which contains about 70 hours of Chinese speech audio, human transcripts, ASR results and English translations. <br>
+        In order to make tradeoff between translation quality and translation efficiency, we proposed several methods including <a href="https://www.aclweb.org/anthology/P19-1289.pdf">wait-k</a> and <a href="https://www.aclweb.org/anthology/2020.emnlp-main.178.pdf">adaptive meaningful units segmentation method</a>.
+    </li>
+    <li>
+        Multilingual Translation<br>
+        For most of language pairs such as Chinese-Spanish, Chinese-Japanese, Chinese-Thai Language, there exists data sparseness problems. Besides pivot language approaches, we proposed the <a href="https://www.aclweb.org/anthology/P15-1166.pdf">one to many translation method</a> in 2015, which shares the source language encode, and use individual decodes for each target language.
     </li>
     </ul>
+
+    <h2>Natural Language Processing</h2>
+    <ul>
+    <li>
+        Pre-trained Model ERNIE<br>
+        Recently pre-trained models have achieved state-of-the-art results in various language understanding tasks. In order to extract the lexical, syntactic and semantic information from training corpora, we propose a continual pre-training framework named <a href="https://arxiv.org/pdf/1907.12412.pdf">ERNIE 2.0</a> which incrementally builds pre-training tasks and then learn pre-trained models on these constructed tasks via continual multi-task learning. Based on this framework, we construct several tasks and train the ERNIE 2.0 model to capture lexical, syntactic and semantic aspects of information in the training data. Experimental results demonstrate that ERNIE 2.0 outperforms BERT and XLNet on 16 tasks including English tasks on GLUE benchmarks and several similar tasks in Chinese. The <a href="https://github.com/PaddlePaddle/ERNIE">source codes and pre-trained models</a> have been released.
+    </li>
+    <li>
+        Question Answering and Machine Reading Comprehension<br>
+        We developed Question Answering and Machine Reading Comprehension methods, which are used in <a href="https://www.baidu.com/">Baidu search engine</a>. Recently, we proposed <a href="https://arxiv.org/abs/2010.08191">RocketQA</a>, an optimized training approach to dense passage retrieval for open-domain question answering. RocketQA achieved the 1st rank at the leaderboard of MSMARCO Passage Ranking Task. <br>
+        We released a Chinese dataset namely <a href="https://arxiv.org/pdf/2004.11142">DuReader<SUB>robust</SUB></a> towards evaluating the robustness of machine reading comprehension models, and we hosted a shared task based on DuReader<SUB>robust</SUB> [<a href="https://github.com/PaddlePaddle/Research/tree/master/NLP/DuReader-Robust-BASELINE">Data&Code</a>, <a href="https://aistudio.baidu.com/aistudio/competition/detail/28?isFromCcf=true">Leaderboard</a>].
+    </li>
+    </ul>
+
 
 </div>
 
