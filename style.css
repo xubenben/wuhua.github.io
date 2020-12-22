@@ -31,8 +31,8 @@ p {
     padding: 0 0 4px 0;
 }
 
-li:not(:last-child) {
-    margin-bottom: 10px;
+li {
+    margin: 10px 0;
 }
 
 #wrapper {
