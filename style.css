@@ -37,8 +37,9 @@ li {
 
 #wrapper {
     position: absolute;
-    left: 160px;
+    left: 50%;
     width: 900px;
+    margin-left: -450px;
     padding-bottom: 30px;
 }
 
@@ -76,12 +77,14 @@ li {
        /* Corbel, Arial, Helvetica, sans-serif; */
     font-family: Georgia, Times, "Times New Roman", serif;
     position:  fixed;
-    top: 80px;
+    top: 41px;
     /* left: 860px; */
-    left: 60px; 		/*1060*/
-    width: 100px;
+    left: 340px; 		/*1060*/
+    /*width: 100px;*/
     font-size: 14px;
     font-weight: bold;
+    display: flex;
+    position: absolute;
 }
 
 #nav li {
@@ -90,7 +93,7 @@ li {
 
 #nav a {
     display: block;
-    padding: 6px 12px 7px;
+    padding: 10px 18px 10px;
     color: #fff;
     background-color: #3c738c;
     text-decoration: none;
