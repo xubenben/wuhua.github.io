@@ -77,11 +77,11 @@ li {
        /* Corbel, Arial, Helvetica, sans-serif; */
     font-family: Georgia, Times, "Times New Roman", serif;
     position:  fixed;
-    top: 41px;
+    top: 30px;
     /* left: 860px; */
-    left: 340px; 		/*1060*/
+    left: 416px; 		/*1060*/
     /*width: 100px;*/
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     display: flex;
     position: absolute;
